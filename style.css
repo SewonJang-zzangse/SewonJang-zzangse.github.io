@@ -1,0 +1,56 @@
+:root {
+  --bg: #fffaf3;
+  --surface: #ffffff;
+  --text: #2b2118;
+  --muted: #75685c;
+  --accent: #d9731f;
+  --line: #eadfd2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1814;
+    --surface: #26211c;
+    --text: #f3ece4;
+    --muted: #b3a697;
+    --accent: #f0a05a;
+    --line: #3a322a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 40px 0 8px; }
+h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+.card {
+  display: flex; gap: 20px; align-items: center;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 20px; padding: 20px; text-decoration: none; color: inherit;
+}
+.card img { width: 88px; height: 88px; border-radius: 22px; background: #fff; flex: none; }
+.card h2 { margin: 0 0 4px; }
+.card p { margin: 0; }
+.hero { display: flex; gap: 20px; align-items: center; margin-bottom: 24px; }
+.hero img { width: 112px; height: 112px; border-radius: 28px; background: #fff; flex: none; }
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+.shots img { width: 100%; border-radius: 16px; border: 1px solid var(--line); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .9rem; }
+@media (max-width: 520px) {
+  .hero, .card { flex-direction: column; align-items: flex-start; }
+  .shots { grid-template-columns: 1fr 1fr; }
+}
