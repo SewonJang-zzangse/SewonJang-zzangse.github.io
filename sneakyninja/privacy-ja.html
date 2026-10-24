@@ -12,7 +12,7 @@
 <main>
   <p class="muted"><a href="privacy.html" hreflang="ko">한국어</a> · <a href="privacy-en.html" hreflang="en">English</a> · <strong>日本語</strong> · <a href="privacy-zh-TW.html" hreflang="zh-TW">繁體中文</a></p>
   <h1>Sneaky Ninja プライバシーポリシー</h1>
-  <p class="muted">施行日：2026年10月13日</p>
+  <p class="muted">施行日：2026年10月24日</p>
 
   <p>Sneaky Ninja: 忍者巻物大作戦（以下「本ゲーム」）は、個人開発者 JustTock（以下「開発者」）が制作しました。
   本ポリシーでは、本ゲームが扱う情報と、端末の外に送られる情報について説明します。
@@ -22,7 +22,8 @@
   <ul>
     <li>本ゲーム独自の会員登録はありません。メールアドレスや電話番号を求めることはありません。</li>
     <li>オンラインランキングには <strong>Google Play ゲーム</strong> を使用します。記録を登録すると、入力した名前・スコア・到達ラウンドが Google Play ゲームに保存され、他のプレイヤーに表示される場合があります。</li>
-    <li>広告は <strong>Google AdMob</strong> が配信します。広告のために、端末情報、広告 ID、おおよその位置情報などが Google に送信される場合があります。</li>
+    <li>広告は<strong>Unity LevelPlay</strong>（旧 ironSource）が表示します。広告のために端末情報、広告ID、おおよその位置などが Unity と広告会社に送られることがあります。</li>
+    <li>オンラインマルチプレイには<strong>Epic Online Services</strong>を使います。マルチプレイを使うときだけ、端末単位の匿名ログイン情報、入力したニックネーム・部屋名、試合の情報がやり取りされます。</li>
     <li>開発者はゲームサーバーを持ちません。ただし、ゲームでエラーが発生した場合は、問題を修正するために <strong>Sentry</strong> を通じてエラー・診断情報を受け取ります。個人を特定する情報は含まれません。</li>
   </ul>
 
@@ -36,6 +37,8 @@
     <tr><td>最後に入力した名前</td><td>次回の名前欄への自動入力</td></tr>
     <tr><td>設定（BGM・効果音・言語・操作方法）</td><td>設定の保持</td></tr>
     <tr><td>アップデート確認の状態</td><td>「あとで」を選んだバージョンと最小バージョンの記憶</td></tr>
+    <tr><td>マルチプレイのニックネーム</td><td>次回のマルチプレイでニックネームを保持</td></tr>
+    <tr><td>マルチプレイの匿名ログイン情報（Epic Online Services SDK が保存）</td><td>同じ端末でマルチプレイに再接続</td></tr>
   </table>
   </div>
 
@@ -52,19 +55,31 @@
   <p>Google による情報の取り扱いについては <a href="https://policies.google.com/privacy">Google プライバシー ポリシー</a>をご覧ください。
   Play ゲームのプロフィールやゲームデータは、Google Play ゲームの設定から管理・削除できます。</p>
 
-  <h3>広告（Google AdMob）</h3>
-  <p>本ゲームは Google AdMob を通じて広告を表示します。広告の読み込みと表示のため、Google AdMob SDK が次の情報を Google に送信する場合があります。</p>
+  <h3>オンラインマルチプレイ（Epic Online Services）</h3>
+  <p>オンラインマルチプレイには Epic Games, Inc.（米国）の<strong>Epic Online Services</strong>を使います。マルチプレイのメニューを使うときだけ、次の情報がやり取りされます。</p>
   <ul>
-    <li>端末情報（機種、OS バージョン、言語など）と広告 ID</li>
-    <li>IP アドレスと、それに基づくおおよその位置情報</li>
-    <li>広告の表示・クリックなど、アプリ内での広告とのやり取り</li>
-    <li>広告 SDK のエラー・診断情報</li>
+    <li><strong>端末単位の匿名ログイン</strong>：初めてマルチプレイを使うときにこの端末用の匿名アカウントを作り（Epic アカウントやメールアドレスではありません）、Epic が発行したユーザーIDで部屋を作成・参加します。</li>
+    <li>入力した<strong>ニックネーム</strong>と<strong>部屋名</strong>、部屋コード・人数・ロックの有無などの部屋情報。ニックネームと部屋名は部屋一覧やロビーで他のプレイヤーに表示されるため、本名などの個人情報は使わないでください。</li>
+    <li>試合中の操作入力と試合の進行情報。同じ部屋のプレイヤーの端末へ直接送られるか、Epic の中継サーバーを経由します。端末同士が直接つながる場合、同じ部屋のプレイヤーの端末は互いのIPアドレスを知ることができます。</li>
   </ul>
-  <p>これらの情報は、広告の配信、広告効果の測定、不正クリックの防止に使われます。また Google は広告 ID とアプリの利用状況に基づいて、興味に合わせた<strong>パーソナライズド広告</strong>を表示する場合があります。開発者がこれらの情報を受け取ったり保存したりすることはありません。</p>
-  <p>欧州経済領域（EEA）や英国など同意が必要な地域では、本ゲームの起動時に Google の同意画面が表示され、パーソナライズド広告を許可するかどうかを選べます。</p>
-  <p>パーソナライズド広告を希望しない場合は、端末の<strong>設定 → プライバシー（または Google）→ 広告</strong>で広告 ID を削除またはリセットできます。詳しくは
-  <a href="https://policies.google.com/privacy">Google プライバシー ポリシー</a>と
-  <a href="https://policies.google.com/technologies/partner-sites">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>をご覧ください。</p>
+  <p>部屋のパスワードは Epic のサーバーの部屋情報には載せず、ホストの端末でのみ確認します。部屋の戦績（勝敗）は部屋が開いている間だけ参加者の端末にあり、保存しません。チャット・ボイス機能はありません。
+  詳しくは <a href="https://www.epicgames.com/site/privacypolicy">Epic Games プライバシーポリシー</a>をご覧ください。</p>
+
+  <h3>広告（Unity LevelPlay）</h3>
+  <p>本ゲームは Unity Technologies の広告メディエーションサービス<strong>Unity LevelPlay</strong>（旧 ironSource）を通じて広告を表示します。
+  広告を読み込んで表示するために、LevelPlay SDK が次の情報を Unity と、LevelPlay が接続する広告会社に送ることがあります。</p>
+  <ul>
+    <li>端末情報（機種、OSバージョン、言語など）と広告ID・アプリセットID</li>
+    <li>IPアドレスと、それに基づくおおよその位置</li>
+    <li>広告の表示・クリックなど、アプリ内での広告とのやり取り</li>
+    <li>広告SDKのエラー・診断情報</li>
+  </ul>
+  <p>これらの情報は広告の配信、広告効果の測定、不正クリックの防止に使われ、広告IDとアプリの利用状況をもとに
+  <strong>パーソナライズ広告</strong>が表示されることがあります。開発者はこれらの情報を受け取ったり保存したりしません。</p>
+  <p>本ゲームは欧州経済領域（EEA）、英国、スイスでは提供していません。</p>
+  <p>パーソナライズ広告を望まない場合は、端末の<strong>設定 → プライバシー（または Google）→ 広告</strong>で
+  広告IDを削除またはリセットできます。詳しくは
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity ゲームプレイヤー・アプリユーザー向けプライバシーポリシー</a>をご覧ください。</p>
 
   <h3>エラー・クラッシュレポート（Sentry）</h3>
   <p>ゲームでエラーが発生したり異常終了したりした場合、問題を見つけて修正するために、以下の診断情報をエラー収集サービス

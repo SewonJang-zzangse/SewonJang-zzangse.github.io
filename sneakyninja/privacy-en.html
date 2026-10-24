@@ -12,7 +12,7 @@
 <main>
   <p class="muted"><a href="privacy.html" hreflang="ko">한국어</a> · <strong>English</strong> · <a href="privacy-ja.html" hreflang="ja">日本語</a> · <a href="privacy-zh-TW.html" hreflang="zh-TW">繁體中文</a></p>
   <h1>Sneaky Ninja Privacy Policy</h1>
-  <p class="muted">Effective date: October 13, 2026</p>
+  <p class="muted">Effective date: October 24, 2026</p>
 
   <p>Sneaky Ninja: Scroll Heist (the “Game”) is made by JustTock, an independent developer (the “Developer”).
   This policy explains what information the Game handles and what leaves your phone.
@@ -22,7 +22,8 @@
   <ul>
     <li>The Game has no account sign-up of its own. It never asks for your email or phone number.</li>
     <li>The online leaderboard uses <strong>Google Play Games</strong>. When you post a record, the name you type, your score and the round you reached are stored by Google Play Games and may be visible to other players.</li>
-    <li>Ads are served by <strong>Google AdMob</strong>. Device information, the advertising ID, approximate location and similar data may be sent to Google for advertising.</li>
+    <li>Ads are served by <strong>Unity LevelPlay</strong> (formerly ironSource). Device information, the advertising ID, approximate location and similar data may be sent to Unity and ad networks for advertising.</li>
+    <li>Online multiplayer uses <strong>Epic Online Services</strong>. Only when you play online, an anonymous per-device sign-in, the nickname and room title you type, and match data are exchanged.</li>
     <li>The Developer runs no game servers. When the Game hits an error, error and diagnostic information is sent to the Developer through <strong>Sentry</strong> so the problem can be fixed. It contains no information that identifies you.</li>
   </ul>
 
@@ -36,6 +37,8 @@
     <tr><td>The last name you typed</td><td>Pre-filling the name field next time</td></tr>
     <tr><td>Settings (music, sound effects, language, controls)</td><td>Remembering your settings</td></tr>
     <tr><td>Update check state</td><td>Remembering a version you chose “Later” for, and the minimum version</td></tr>
+    <tr><td>Multiplayer nickname</td><td>Keeping your nickname for the next online session</td></tr>
+    <tr><td>Anonymous multiplayer sign-in (stored by the Epic Online Services SDK)</td><td>Reconnecting to multiplayer from the same device</td></tr>
   </table>
   </div>
 
@@ -52,21 +55,31 @@
   <p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for how Google handles this information.
   You can manage or delete your Play Games profile and game data in the Google Play Games settings.</p>
 
-  <h3>Ads (Google AdMob)</h3>
-  <p>The Game shows ads through Google AdMob. To load and show ads, the Google AdMob SDK may send the following to Google:</p>
+  <h3>Online multiplayer (Epic Online Services)</h3>
+  <p>Online multiplayer uses <strong>Epic Online Services</strong> from Epic Games, Inc. (USA). The information below is exchanged only when you use the multiplayer menu.</p>
   <ul>
-    <li>Device information (model, OS version, language, etc.) and the advertising ID</li>
+    <li><strong>Anonymous per-device sign-in</strong>: the first time you play online, an anonymous account is created for this device (not an Epic account and no email), and the user ID Epic issues is used to create and join rooms.</li>
+    <li>The <strong>nickname</strong> and <strong>room title</strong> you type, and room details such as the room code, player count and whether it is locked. Nicknames and room titles are visible to other players in the room list and lobby, so do not use your real name or other personal information.</li>
+    <li>Controls and match progress during a match. These go straight to the other players’ devices in the room or through Epic’s relay servers. When devices connect directly, players in the same room can see each other’s IP addresses.</li>
+  </ul>
+  <p>Room passwords are not posted to Epic’s room information; only the host’s device checks them. Room standings (wins and losses) exist only on the players’ devices while the room is open and are not saved. There is no chat or voice.
+  See the <a href="https://www.epicgames.com/site/privacypolicy">Epic Games Privacy Policy</a> for details.</p>
+
+  <h3>Ads (Unity LevelPlay)</h3>
+  <p>The Game shows ads through <strong>Unity LevelPlay</strong> (formerly ironSource), an ad mediation service from Unity Technologies.
+  To load and show ads, the LevelPlay SDK may send the following to Unity and to the ad networks LevelPlay connects to:</p>
+  <ul>
+    <li>Device information (model, OS version, language, etc.), the advertising ID and the app set ID</li>
     <li>IP address and approximate location derived from it</li>
     <li>Ad interactions in the app, such as views and clicks</li>
     <li>Error and diagnostic information from the ad SDK</li>
   </ul>
-  <p>This information is used to deliver ads, measure ad performance and prevent fraud, and Google may show
-  <strong>personalized ads</strong> based on the advertising ID and app usage. The Developer does not receive or store this information.</p>
-  <p>In regions that require consent, such as the European Economic Area (EEA) and the UK, Google’s consent form appears when the Game starts, and you can choose whether to allow personalized ads.</p>
+  <p>This information is used to deliver ads, measure ad performance and prevent fraud, and <strong>personalized ads</strong>
+  may be shown based on the advertising ID and app usage. The Developer does not receive or store this information.</p>
+  <p>The Game is not offered in the European Economic Area (EEA), the UK or Switzerland.</p>
   <p>If you do not want personalized ads, you can delete or reset your advertising ID in your phone’s
   <strong>Settings → Privacy (or Google) → Ads</strong>. For details, see the
-  <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
-  <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>.</p>
 
   <h3>Error and crash reports (Sentry)</h3>
   <p>When the Game hits an error or crashes, it sends the diagnostic information below to the error tracking service

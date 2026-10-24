@@ -12,7 +12,7 @@
 <main>
   <p class="muted"><a href="privacy.html" hreflang="ko">한국어</a> · <a href="privacy-en.html" hreflang="en">English</a> · <a href="privacy-ja.html" hreflang="ja">日本語</a> · <strong>繁體中文</strong></p>
   <h1>Sneaky Ninja 隱私權政策</h1>
-  <p class="muted">生效日期：2026年10月13日</p>
+  <p class="muted">生效日期：2026年10月24日</p>
 
   <p>Sneaky Ninja: 忍者卷軸大作戰（以下稱「本遊戲」）由個人開發者 JustTock（以下稱「開發者」）製作。
   本政策說明本遊戲會處理哪些資訊，以及哪些資訊會傳送到手機以外。
@@ -22,7 +22,8 @@
   <ul>
     <li>本遊戲沒有自己的會員註冊，不會要求提供電子郵件或電話號碼。</li>
     <li>線上排行榜使用 <strong>Google Play 遊戲</strong>。登錄紀錄時，你輸入的名字、分數與到達關卡會儲存在 Google Play 遊戲，並可能顯示給其他玩家。</li>
-    <li>廣告由 <strong>Google AdMob</strong> 提供。為了投放廣告，裝置資訊、廣告 ID、大概位置等資訊可能會傳送給 Google。</li>
+    <li>廣告由<strong>Unity LevelPlay</strong>（原 ironSource）提供。為了投放廣告，裝置資訊、廣告 ID、大致位置等可能會傳送給 Unity 與廣告公司。</li>
+    <li>線上多人遊戲使用<strong>Epic Online Services</strong>。只有在使用多人遊戲時，才會交換以裝置為單位的匿名登入資訊、您輸入的暱稱與房間名稱，以及比賽資訊。</li>
     <li>開發者沒有架設遊戲伺服器。但遊戲發生錯誤時，為了修正問題，會透過 <strong>Sentry</strong> 接收錯誤與診斷資訊，其中不含可識別個人身分的資訊。</li>
   </ul>
 
@@ -36,6 +37,8 @@
     <tr><td>最後輸入的名字</td><td>下次自動填入名字欄位</td></tr>
     <tr><td>設定（背景音樂、音效、語言、操作方式）</td><td>保留設定</td></tr>
     <tr><td>更新檢查狀態</td><td>記住選擇「稍後」的版本與最低版本</td></tr>
+    <tr><td>多人遊戲暱稱</td><td>下次多人遊戲時保留暱稱</td></tr>
+    <tr><td>多人遊戲匿名登入資訊（由 Epic Online Services SDK 儲存）</td><td>以同一裝置重新連線多人遊戲</td></tr>
   </table>
   </div>
 
@@ -52,19 +55,31 @@
   <p>Google 如何處理這些資訊，請參閱 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>。
   你可以在 Google Play 遊戲設定中管理或刪除 Play 遊戲個人檔案與遊戲資料。</p>
 
-  <h3>廣告（Google AdMob）</h3>
-  <p>本遊戲透過 Google AdMob 顯示廣告。為了載入及顯示廣告，Google AdMob SDK 可能會將以下資訊傳送給 Google：</p>
+  <h3>線上多人遊戲（Epic Online Services）</h3>
+  <p>線上多人遊戲使用 Epic Games, Inc.（美國）的<strong>Epic Online Services</strong>。只有在使用多人遊戲選單時，才會交換以下資訊。</p>
   <ul>
-    <li>裝置資訊（機型、作業系統版本、語言等）與廣告 ID</li>
-    <li>IP 位址以及據此推估的大概位置</li>
-    <li>應用程式內的廣告互動，例如瀏覽與點擊</li>
+    <li><strong>以裝置為單位的匿名登入</strong>：第一次使用多人遊戲時，會為這台裝置建立匿名帳號（不是 Epic 帳號，也不需要電子郵件），並以 Epic 發給的使用者 ID 建立或加入房間。</li>
+    <li>您輸入的<strong>暱稱</strong>與<strong>房間名稱</strong>，以及房間代碼、人數、是否上鎖等房間資訊。暱稱與房間名稱會在房間列表與大廳中顯示給其他玩家，請勿使用真實姓名等個人資訊。</li>
+    <li>比賽中的操作輸入與比賽進度資訊。這些資訊會直接傳到同一房間玩家的裝置，或經由 Epic 的中繼伺服器。裝置之間直接連線時，同一房間的玩家裝置可以得知彼此的 IP 位址。</li>
+  </ul>
+  <p>房間密碼不會放在 Epic 伺服器的房間資訊中，只在房主的裝置上確認。房間戰績（勝負）只在房間開啟期間存在於參加者的裝置中，不會儲存。沒有聊天或語音功能。
+  詳情請參閱 <a href="https://www.epicgames.com/site/privacypolicy">Epic Games 隱私權政策</a>。</p>
+
+  <h3>廣告（Unity LevelPlay）</h3>
+  <p>本遊戲透過 Unity Technologies 的廣告中介服務<strong>Unity LevelPlay</strong>（原 ironSource）顯示廣告。
+  為了載入與顯示廣告，LevelPlay SDK 可能會將下列資訊傳送給 Unity 及 LevelPlay 連接的廣告公司：</p>
+  <ul>
+    <li>裝置資訊（機型、作業系統版本、語言等）與廣告 ID、應用程式集 ID</li>
+    <li>IP 位址及據此推估的大致位置</li>
+    <li>應用程式內的廣告互動，例如觀看與點擊</li>
     <li>廣告 SDK 的錯誤與診斷資訊</li>
   </ul>
-  <p>這些資訊用於投放廣告、評估廣告成效及防止詐欺點擊，Google 也可能依據廣告 ID 與應用程式使用情形顯示符合興趣的<strong>個人化廣告</strong>。開發者不會另外接收或儲存這些資訊。</p>
-  <p>在歐洲經濟區（EEA）、英國等需要同意的地區，啟動本遊戲時會顯示 Google 的同意畫面，你可以選擇是否允許個人化廣告。</p>
-  <p>如果不想看到個人化廣告，可以在手機的<strong>設定 → 隱私權（或 Google）→ 廣告</strong>中刪除或重設廣告 ID。詳情請參閱
-  <a href="https://policies.google.com/privacy">Google 隱私權政策</a>與
-  <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用採用其服務的網站或應用程式中的資訊</a>。</p>
+  <p>這些資訊用於投放廣告、衡量廣告成效及防止不當點擊，並可能依據廣告 ID 與應用程式使用情形顯示
+  <strong>個人化廣告</strong>。開發者不會另外接收或儲存這些資訊。</p>
+  <p>本遊戲不在歐洲經濟區（EEA）、英國及瑞士提供。</p>
+  <p>如果不想看到個人化廣告，可以在手機的<strong>設定 → 隱私權（或 Google）→ 廣告</strong>中
+  刪除或重設廣告 ID。詳情請參閱
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 遊戲玩家與應用程式使用者隱私權政策</a>。</p>
 
   <h3>錯誤與當機回報（Sentry）</h3>
   <p>遊戲發生錯誤或異常結束時，為了找出並修正問題，會將下列診斷資訊傳送到錯誤收集服務
