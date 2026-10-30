@@ -1,5 +1,4 @@
 OWNERDOMAIN=sewonjang-zzangse.github.io
-google.com, pub-4825565816299070, DIRECT, f08c47fec0942fa0
 ironsrc.com, 694927, DIRECT
 # Unity Ads (LevelPlay network, from the Unity Monetization dashboard, 2026-10-27)
 bigo.sg, adidz3dyfp, RESELLER
