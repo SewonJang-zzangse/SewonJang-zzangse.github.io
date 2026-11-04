@@ -1,5 +1,7 @@
 {
   "android": {
-    "minVersionCode": 9
+    "minVersionCode": 9,
+    "mixPassMinutes": 30,
+    "mixPassesPerDay": 3
   }
 }
